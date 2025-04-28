@@ -30,11 +30,21 @@
 
 2. if를 filter로
 3. 값 변화 후 변수 할당을 map으로
-4. break를 take로
+4. break를 take로 (시간복잡도 줄이고 싶으면 take)
 5. 축약 및 합산을 reduce로
+
+
 
 <script>
   const add = (a, b) => a + b;
+
+  // function f2(limit, list){
+  //  _reduce(add,
+  //  L.take(limit,
+  //  L.map(a => a * a,
+  //  L.filter(a => a % 2, list)))
+  //  )
+  // } 
 
   function f2(limit, list) {
     _.go(list,

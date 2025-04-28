@@ -19,8 +19,10 @@ const fg = x => f(g(x));
 _.go(
   10,
   fg,
-  console.log);
+  console.log); // 15
 
+
+  // 모나드 형태의 합성
 _.go(
   [],
   L.map(fg),
